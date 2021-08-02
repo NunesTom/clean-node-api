@@ -9,7 +9,9 @@
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test -- --findRelatedTests",
-    "test:ci": "npm test -- --coverage"
+    "test:ci": "npm test -- --coverage",
+    "change:node14": "nvm use 14.17.3",
+    "change:node12": "nvm use 12.22.1"
   },
   "keywords": [],
   "author": "",
