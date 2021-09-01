@@ -7,6 +7,7 @@ module.exports = {
   roots: ['<rootDir>/src'],
   // A map from regular expressions to paths to transformers
   testEnvironment: 'node',
+  preset: '@shelf/jest-mongodb',
   transform: {
     '.+\\.ts$': 'ts-jest'
   }
