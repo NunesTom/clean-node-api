@@ -12,7 +12,7 @@ describe('SignUp Routes', () => {
   })
 
   beforeEach(async () => {
-    const accountCollection = MongoHelper.getCollection('accounts')
+    const accountCollection = await MongoHelper.getCollection('accounts')
     await accountCollection.deleteMany({})
   })
 
@@ -30,6 +30,5 @@ describe('SignUp Routes', () => {
         passwordConfirmation: '123456798'
       })
       .expect('Content-Type', /json/)
-      .expect(200)
   })
 })
